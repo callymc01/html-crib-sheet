@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Media Elements Summary Page</title>
+</head>
+
+<body>
+
+    <p><a href="index.html">Back to Homepage</a></p>
+
+    <main>
+
+        <h1>Media Elements</h1>
+        <p>This page summarises the media-related HTML elements I've learned so far.</p>
+
+        <hr>
+
+        <!-- IMAGE -->
+        <section>
+            <h2>Image Element</h2>
+
+            <p>The <b>&lt;img&gt;</b> element embeds images into a webpage. It is a <b>void element</b> (no closing tag).</p>
+
+            <h3>Essential Attributes</h3>
+            <ul>
+                <li><b>src</b> — image file path or URL</li>
+                <li><b>alt</b> — text description for accessibility</li>
+                <li><b>title</b> — optional tooltip text</li>
+            </ul>
+
+            <details>
+                <summary>Show example</summary>
+                <pre><code>
+&lt;img src="cat.jpg" alt="A cute cat" title="Cat photo"&gt;
+                </code></pre>
+            </details>
+
+            <p><a href="img-example-cat.html">CatPhotoApp Example</a></p>
+        </section>
+
+        <hr>
+
+        <!-- AUDIO -->
+        <section>
+            <h2>Audio Element</h2>
+
+            <p>The <b>&lt;audio&gt;</b> element embeds audio files such as music or sound effects.</p>
+            <p>You can include multiple <b>&lt;source&gt;</b> elements for better browser compatibility.</p>
+
+            <h3>Useful Attributes</h3>
+            <ul>
+                <li><b>src</b> — audio file path or URL</li>
+                <li><b>controls</b> — shows play/pause UI</li>
+                <li><b>autoplay</b> — starts automatically</li>
+                <li><b>loop</b> — repeats when finished</li>
+                <li><b>muted</b> — starts muted</li>
+            </ul>
+
+            <details>
+                <summary>Show example</summary>
+                <pre><code>
+&lt;audio controls&gt;
+    &lt;source src="sound.mp3" type="audio/mpeg"&gt;
+    &lt;source src="sound.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;
+                </code></pre>
+            </details>
+
+            <p><a href="audio-element.html">Audio Element Example</a></p>
+        </section>
+
+        <hr>
+
+        <!-- VIDEO -->
+        <section>
+            <h2>Video Element</h2>
+
+            <p>The <b>&lt;video&gt;</b> element embeds video content.</p>
+            <p>Multiple <b>&lt;source&gt;</b> elements can be used for compatibility.  
+               Autoplay usually requires <b>muted</b> for modern browsers.</p>
+
+            <h3>Useful Attributes</h3>
+            <ul>
+                <li><b>src</b> — video file path or URL</li>
+                <li><b>controls</b> — shows play/pause UI</li>
+                <li><b>autoplay</b> — starts automatically</li>
+                <li><b>loop</b> — repeats when finished</li>
+                <li><b>muted</b> — starts muted</li>
+                <li><b>poster</b> — image shown before playback</li>
+                <li><b>source</b> — used inside &lt;video&gt; to list file types (mp4, webm, ogg)</li>
+            </ul>
+
+            <details>
+                <summary>Show example</summary>
+                <pre><code>
+&lt;video controls poster="preview.jpg"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;source src="video.webm" type="video/webm"&gt;
+&lt;/video&gt;
+                </code></pre>
+            </details>
+
+            <p><a href="video-element.html">Video Element Example</a></p>
+        </section>
+
+        <hr>
+
+        <!-- IFRAME -->
+        <section>
+            <h2>Iframe Element</h2>
+
+            <p>The <b>&lt;iframe&gt;</b> element embeds external content such as YouTube videos or maps.</p>
+            <p>It is a <b>replaced element</b> — its content comes from an external resource.</p>
+
+            <h3>Important Attributes & Values</h3>
+            <ul>
+                <li><b>allow</b> — permissions for the iframe (e.g., autoplay, clipboard-write)</li>
+                <li><b>accelerometer</b> — allows motion sensor access</li>
+                <li><b>autoplay</b> — allows auto-playing media</li>
+                <li><b>clipboard-write</b> — allows writing to clipboard</li>
+                <li><b>encrypted-media</b> — allows DRM-protected content</li>
+                <li><b>gyroscope</b> — allows orientation sensor access</li>
+                <li><b>web-share</b> — allows native share dialogs</li>
+                <li><b>referrerpolicy</b> — controls what referrer info is sent</li>
+                <li><b>strict-origin-when-cross-origin</b> — common referrer policy value</li>
+                <li><b>allowfullscreen</b> — allows fullscreen mode</li>
+            </ul>
+
+            <details>
+                <summary>Show example</summary>
+                <pre><code>
+&lt;iframe 
+    src="https://www.youtube.com/embed/example"
+    allow="autoplay; encrypted-media; fullscreen"
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+                </code></pre>
+            </details>
+
+            <p><a href="iframe-example.html">Iframe Example</a></p>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forms Summary Page</title>
+</head>
+
+<body>
+
+    <p><a href="index.html">Back to Homepage</a></p>
+
+    <main>
+
+        <h1>Forms</h1>
+        <p>This page summarises the form elements and attributes I've learned so far.</p>
+
+        <hr>
+
+        <!-- ACTION & METHOD -->
+        <section>
+            <h2>Action & Method Attributes</h2>
+
+            <p>The <b>&lt;form&gt;</b> element usually begins with two important attributes:</p>
+
+            <ul>
+                <li><b>action</b> — where the form data is sent when submitted</li>
+                <li><b>method</b> — the HTTP method used (commonly GET or POST)</li>
+            </ul>
+
+            <blockquote>
+                I haven’t learned HTTP methods yet, but I know GET and POST are the most common.
+            </blockquote>
+        </section>
+
+        <hr>
+
+        <!-- FIELDSET & LEGEND -->
+        <section>
+            <h2>Fieldset & Legend</h2>
+
+            <p><b>&lt;fieldset&gt;</b> groups related form controls together and draws a box around them.</p>
+            <p><b>&lt;legend&gt;</b> provides a title for that group.</p>
+
+            <details>
+                <summary>Show example</summary>
+                <pre><code>
+&lt;fieldset&gt;
+    &lt;legend&gt;Personal Info&lt;/legend&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input id="name" type="text"&gt;
+&lt;/fieldset&gt;
+                </code></pre>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- LABEL & FOR -->
+        <section>
+            <h2>Label Element & For Attribute</h2>
+
+            <p>The <b>&lt;label&gt;</b> element connects text to an input.</p>
+            <p>The <b>for</b> attribute must match the input’s <b>id</b> exactly.</p>
+
+            <details>
+                <summary>Show example</summary>
+                <pre><code>
+&lt;label for="input-id"&gt;Label text&lt;/label&gt;
+&lt;input id="input-id" type="text"&gt;
+                </code></pre>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- INPUT ELEMENTS -->
+        <section>
+            <h2>Input Elements</h2>
+
+            <p>The <b>&lt;input&gt;</b> element is a <b>void element</b> (no closing tag) and changes behaviour based on its <b>type</b>.</p>
+
+            <h3>Common Types</h3>
+            <ul>
+                <li><b>text</b> — single-line text field</li>
+                <li><b>email</b> — checks email format</li>
+                <li><b>number</b> — numeric input only</li>
+                <li><b>radio</b> — one option from a group (same <b>name</b>)</li>
+                <li><b>checkbox</b> — multiple independent selections</li>
+            </ul>
+
+            <h3>Useful Input Attributes</h3>
+            <ul>
+                <li><b>id</b> — unique identifier, links to label</li>
+                <li><b>name</b> — key used when sending form data</li>
+                <li><b>placeholder</b> — hint text</li>
+                <li><b>min</b> / <b>max</b> — restricts allowed range</li>
+                <li><b>value</b> — default value or submitted value</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- SELECT -->
+        <section>
+            <h2>Select Element (Dropdown)</h2>
+
+            <p><b>&lt;select&gt;</b> creates a dropdown list. Inside it are <b>&lt;option&gt;</b> elements.</p>
+
+            <ul>
+                <li><b>select</b> is the container</li>
+                <li><b>option</b> defines each choice</li>
+                <li><b>value</b> is what gets submitted</li>
+                <li>the text between &lt;option&gt; tags is what the user sees</li>
+                <li><b>selected</b> sets a default option</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- BUTTON -->
+        <section>
+            <h2>Button Element</h2>
+
+            <p>Buttons perform actions. The <b>type</b> attribute defines what they do:</p>
+
+            <ul>
+                <li><b>submit</b> — submits the form</li>
+                <li><b>reset</b> — resets all fields</li>
+            </ul>
+
+            <p>Example buttons:</p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </section>
+
+        <hr>
+
+        <!-- TEXTAREA -->
+        <section>
+            <h2>Textarea</h2>
+
+            <p><b>&lt;textarea&gt;</b> is used for multi‑line text (comments, messages, etc.).</p>
+
+            <ul>
+                <li><b>rows</b> controls height</li>
+                <li><b>cols</b> controls width</li>
+                <li><b>placeholder</b> adds hint text</li>
+                <li>Use a <b>label</b> linked with <b>id</b></li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>

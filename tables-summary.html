@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables Summary</title>
+</head>
+
+<body>
+
+    <p><a href="index.html">Back to Homepage</a></p>
+
+    <h1>Tables Summary</h1>
+
+    <p>HTML tables aren't used as much as they used to be. Nowadays, developers use CSS Flexbox and Grid for layout.  
+    However, tables are still important for displaying structured data and for understanding older codebases.</p>
+
+    <h2>Structure</h2>
+
+    <p>Inside the <b>&lt;table&gt;</b> element, you can include:</p>
+    <ul>
+        <li><b>&lt;thead&gt;</b> — table head</li>
+        <li><b>&lt;tbody&gt;</b> — table body</li>
+        <li><b>&lt;tfoot&gt;</b> — table footer</li>
+    </ul>
+
+    <p>Each of these sections can contain any number of table rows (<b>&lt;tr&gt;</b>).</p>
+    <p>Each row can contain:</p>
+    <ul>
+        <li><b>&lt;th&gt;</b> — table header cell (usually labels a row or column)</li>
+        <li><b>&lt;td&gt;</b> — table data cell</li>
+    </ul>
+
+    <hr>
+
+    <h2>Example Structure</h2>
+
+    <pre><code>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;The title of this table&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Row&lt;/th&gt;
+      &lt;td&gt;First Data Cell&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;th&gt;Second Row&lt;/th&gt;
+      &lt;td&gt;Second Data Cell&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th&gt;The footer of this table, which might contain date of publication, author credits, or other meta information.&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+    </code></pre>
+
+</body>
+</html>
